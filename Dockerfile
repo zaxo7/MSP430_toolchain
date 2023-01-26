@@ -7,9 +7,8 @@ ENV HOME="/Workspace"
 
 RUN apt update
 RUN apt install -y wget bzip2
-#RUN apt install -y make cmake git check
-#RUN apt install -y build-essential
-#RUN apt clean; apt autoclean; apt autoremove -y
+RUN apt install -y build-essential make cmake git check
+RUN apt clean; apt autoclean; apt autoremove -y
 
 RUN mkdir -p /sdk
 
